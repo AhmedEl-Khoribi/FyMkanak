@@ -5,7 +5,7 @@
     {{ csrf_field() }}
 <div class="box box-danger">
             <div class="box-header with-border">
-              <h3 class="box-title">Create Service</h3>
+              <h3 class="box-title">Create Car</h3>
             </div>
     <div class="form-group">
       <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i>Car Model name</label>
@@ -30,7 +30,7 @@
     </div>
   </div>
 <div class="box-footer">
-<button type="submit" class="btn btn-primary btn-block btn-flat">Create Service</button>
+<button type="submit" class="btn btn-primary btn-block btn-flat">Create Car</button>
 </div>
 </form>
 @if(count($errors))

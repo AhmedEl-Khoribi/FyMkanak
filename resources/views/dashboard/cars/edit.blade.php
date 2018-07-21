@@ -6,7 +6,7 @@
   <input type="hidden" name="_method" value="PATCH">
 <div class="box box-danger">
             <div class="box-header with-border">
-              <h3 class="box-title">Edit Service</h3>
+              <h3 class="box-title">Edit Car</h3>
             </div>
 	<div class="form-group">
 	  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Name</label>
@@ -31,7 +31,7 @@
     </div>
   </div>
 <div class="box-footer">
-<button type="submit" class="btn btn-success btn-block btn-flat">Edit Service</button>
+<button type="submit" class="btn btn-success btn-block btn-flat">Edit Car</button>
 </div>
 </form>
 @if(count($errors))
