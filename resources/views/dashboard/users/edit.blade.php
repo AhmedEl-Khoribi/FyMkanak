@@ -9,19 +9,19 @@
               <h3 class="box-title">Edit User Information</h3>
             </div>
     <div class="form-group">
-      <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i>First Name</label>
+      <label class="control-label" for="inputSuccess"><i class="fa fa-user"></i> First Name</label>
       <input type="text" class="form-control" name="first_name" id="inputSuccess" value="{{ $user->first_name }}">
     </div>
     <div class="form-group">
-      <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i>Last Name</label>
+      <label class="control-label" for="inputSuccess"><i class="fa fa-user"></i> Last Name</label>
       <input type="text" class="form-control" name="last_name" id="inputSuccess" value="{{ $user->last_name }}">
     </div>
      <div class="form-group">
-      <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i>Email</label>
+      <label class="control-label" for="inputSuccess"><i class="fa fa-at"></i> Email</label>
       <input type="text" class="form-control" name="email" id="inputSuccess" value="{{ $user->email }}">
     </div>
      <div class="form-group">
-      <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i>Phone</label>
+      <label class="control-label" for="inputSuccess"><i class="fa fa-phone"></i> Phone</label>
       <input type="text" class="form-control" name="phone" id="inputSuccess" value="{{ $user->phone }}">
     </div>
 <div class="box-footer">
