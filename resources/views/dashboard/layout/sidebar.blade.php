@@ -24,35 +24,36 @@
           </a>
           <ul class="treeview-menu">
             <li class="active"><a href="/users"><i class="fa fa-circle-o"></i>Users & Roles</a></li>
+            <li class="active"><a href="/admin/all-users"><i class="fa fa-circle-o"></i>Registered Users</a></li>
           </ul>
         </li>
-        {{-- <li class="treeview">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-files-o"></i>
-            <span>Categories</span>
+            <span>Services</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right"></span>
+              <span class="label label-primary pull-right">{{ \App\Service::count() }}</span>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/admin/categories"><i class="fa fa-circle-o"></i> All Categories</a></li>
-            <li><a href="/admin/add_category"><i class="fa fa-circle-o"></i> Add Categories</a></li>
+            <li><a href="/admin/service"><i class="fa fa-circle-o"></i> All Services</a></li>
+            <li><a href="/admin/service_create"><i class="fa fa-circle-o"></i> Add Services</a></li>
           </ul>
         </li>
          <li class="treeview">
           <a href="#">
-            <i class="fa fa-files-o"></i>
-            <span>Sub-Categories</span>
+            <i class="fa fa-car"></i>
+            <span>Cars</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right"></span>
+              <span class="label label-primary pull-right">{{ \App\Car::count() }}</span>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/admin/categories"><i class="fa fa-circle-o"></i> All Categories</a></li>
-            <li><a href="/admin/add_category"><i class="fa fa-circle-o"></i> Add Categories</a></li>
+            <li><a href="/admin/car"><i class="fa fa-circle-o"></i> All Cars</a></li>
+            <li><a href="/admin/car_create"><i class="fa fa-circle-o"></i> Add Car</a></li>
           </ul>
         </li>
-        <li class="treeview">
+        {{-- <li class="treeview">
           <a href="#">
             <i class="fa fa-files-o"></i>
             <span>Products</span>

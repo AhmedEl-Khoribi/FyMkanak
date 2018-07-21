@@ -17,7 +17,7 @@ class CreateCarsTable extends Migration
             $table->increments('id');
             $table->longText('name');
             $table->longText('desc');
-            $table->string('status');
+            $table->string('status')->default('1');
             $table->timestamps();
         });
     }

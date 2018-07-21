@@ -32,6 +32,7 @@ class ServiceController extends Controller
     	$this->validate(request(),[
             'name'=>'required',
             'desc'=>'required',
+            'price'=>'required'
         ]);
 
         Service::where('id', $id)->update($request->except(['_token', '_method']));
@@ -47,11 +48,14 @@ class ServiceController extends Controller
     	$this->validate(request(),[
             'name'=>'required',
             'desc'=>'required',
+            'price'=>'required'
+
         ]);
 
         $service = new Service;
         $service->name = $request->name;
         $service->desc = $request->desc;
+        $service->price = $request->price;
         $service->save();
 
         session()->flash('message', 'Service Is Created');
